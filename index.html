@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>E-shop project</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+        </style>
+        <!-- font-family: 'Kumbh Sans', sans-serif; -->
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="queries.css" />
+    </head>
+    <body>
+        <!-- skryté menu ktoré sa zobrazuje len po kliknutí na hamburger -->
+        <header>
+            <div class="hidden-menu hidden">
+                <div class="hidden-menu-list">
+                    <img
+                        id="close-menu"
+                        src="images/icon-close-grey.svg"
+                        alt=""
+                        srcset=""
+                    />
+                    <ul class="hidden-menu-ul">
+                        <li><a href="#">Collections</a></li>
+                        <li><a href="#">Man</a></li>
+                        <li><a href="#">Woman</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- normálne menu -->
+            </div>
+            <div class="h-container">
+                <div class="h1container">
+                    <a id="hamburger" href="#"
+                        ><img src="images/icon-menu.svg" alt="" srcset=""
+                    /></a>
+                    <img src="images/logo.svg" alt="" srcset="" />
+                    <ul class="menu">
+                        <li><a href="#">Collections</a></li>
+                        <li><a href="#">Man</a></li>
+                        <li><a href="#">Woman</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="h2container">
+                    <a id="cart" href="#">
+                        <div class="open-cart hidden">
+                            <div class="cart-text">Cart</div>
+                            <ul class="cart-ul">
+                                <li class="space-around">
+                                    <p>Your cart is empty</p>
+                                </li>
+                            </ul>
+                            <button class="btn-checkout button-orange">
+                                Checkout
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#"
+                        ><img
+                            id="avatar"
+                            src="images/image-avatar.png"
+                            alt=""
+                            srcset=""
+                    /></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="body-container">
+                <div>
+                    <div class="bigImg normal">
+                        <!-- toto sú šípky ktoré sa objavia pri menšom rozlišení -->
+                        <img
+                            class="small-arrow previous-small"
+                            src="images/icon-previous.svg"
+                            alt=""
+                            srcset=""
+                        />
+                        <img
+                            class="small-arrow next-small"
+                            src="images/icon-next.svg"
+                            alt=""
+                            srcset=""
+                        />
+                    </div>
+                    <!--  -->
+                    <div class="smallImgs smallNormal">
+                        <a class="hrefActive" href="#"
+                            ><img
+                                class="imgActive"
+                                src="images/image-product-1-thumbnail.jpg"
+                                alt=""
+                                srcset=""
+                        /></a>
+                        <a href="#"
+                            ><img
+                                src="images/image-product-2-thumbnail.jpg"
+                                alt=""
+                                srcset=""
+                        /></a>
+                        <a href="#"
+                            ><img
+                                src="images/image-product-3-thumbnail.jpg"
+                                alt=""
+                                srcset=""
+                        /></a>
+                        <a href="#"
+                            ><img
+                                src="images/image-product-4-thumbnail.jpg"
+                                alt=""
+                                srcset=""
+                        /></a>
+                    </div>
+                </div>
+                <div class="textinfo">
+                    <div class="orange-sneaker">SNEAKER COMPANY</div>
+                    <h1>Fall Limited Edition Sneakers</h1>
+                    <p>
+                        These low-profile sneakers are your perfect casual wear
+                        companion. Featuring durbale rubber outer sole, they´ll
+                        withstand everything the weather can offer.
+                    </p>
+                    <div class="flex-row">
+                        <div class="pricediv">
+                            <div class="actualPrice">
+                                $ <span class="actualPriceNumber">125.00</span>
+                            </div>
+                            <div class="discount">50%</div>
+                        </div>
+                        <div class="beforePrice">$250.00</div>
+                    </div>
+                    <div class="cart">
+                        <div class="pieces">
+                            <button class="minus">
+                                <img
+                                    src="images/icon-minus.svg"
+                                    alt=""
+                                    srcset=""
+                                />
+                            </button>
+                            <input
+                                class="inputNumber"
+                                type="text"
+                                name="picesnumber"
+                                id=""
+                                value="0"
+                            />
+                            <button class="plus">
+                                <img
+                                    src="images/icon-plus.svg"
+                                    alt=""
+                                    srcset=""
+                                />
+                            </button>
+                        </div>
+                        <button class="addtocart button-orange">
+                            <img
+                                class="white-filter"
+                                src="images/icon-cart-white.svg"
+                                alt=""
+                                srcset=""
+                            />
+                            <div>Add to cart</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Toto je skrytá fotogaleria ktorá sa zobrazí po kliknutí na obrázok -->
+            <div class="fotoGalerry">
+                <div class="imgs">
+                    <div class="bigImg paranormal"></div>
+                    <div class="smallImgs smallParanormal">
+                        <a class="hrefActive" href="#"
+                            ><img
+                                class="imgActive"
+                                src="images/image-product-1-thumbnail.jpg"
+                                alt=""
+                                srcset=""
+                        /></a>
+                        <a href="#"
+                            ><img
+                                src="images/image-product-2-thumbnail.jpg"
+                                alt=""
+                                srcset=""
+                        /></a>
+                        <a href="#"
+                            ><img
+                                src="images/image-product-3-thumbnail.jpg"
+                                alt=""
+                                srcset=""
+                        /></a>
+                        <a href="#"
+                            ><img
+                                src="images/image-product-4-thumbnail.jpg"
+                                alt=""
+                                srcset=""
+                        /></a>
+                    </div>
+                    <img
+                        id="close"
+                        src="images/icon-close.svg"
+                        alt=""
+                        srcset=""
+                    />
+                    <img
+                        class="previous arrow"
+                        src="images/icon-previous.svg"
+                        alt=""
+                        srcset=""
+                    />
+                    <img
+                        class="next arrow"
+                        src="images/icon-next.svg"
+                        alt=""
+                        srcset=""
+                    />
+                </div>
+            </div>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>

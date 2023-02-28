@@ -1,0 +1,126 @@
+@media screen and (max-width: 1250px){
+    .open-cart {
+        padding: 20px;
+        top: 100px;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        padding: 0;
+    }
+
+    #hamburger {
+        display: flex;
+    }
+
+    .small-arrow {
+        display: flex;
+    }
+
+    .bigImg {
+        border-radius:0%;
+        width: 400px;
+        height: 310px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        cursor: auto;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    #avatar {
+        width: 30px;
+        margin-left: 20px;
+    }
+
+    .h-container {
+        margin: 15px auto;
+        max-width: 340px;
+        border: none;
+    }
+
+    .body-container {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .orange-sneaker {
+        margin:15px 0;
+    }
+
+    .smallImgs {
+        display: none;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .textinfo{
+        display: flex;
+        flex-direction: column;
+        max-width: 340px;
+    }
+
+    .flex-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .pricediv {
+        margin: 0;
+    }
+
+    .beforePrice {
+        margin: 0;
+    }
+
+    .cart {
+        flex-direction: column;
+    }
+
+    .pieces {
+        justify-content: space-between;
+        background-color: hsl(223, 64%, 98%);
+    }
+
+    .addtocart {
+        margin: 0;
+        justify-content: center;
+    }
+
+    #bigImg {
+        border-radius: 0px;
+    }
+
+    .open-cart {
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+        padding: 20px;
+        top: 60px;
+        right: -20px;
+    }
+
+    .btn-checkout {
+        width: 340px;
+    }
+
+    .cart-ul {
+        width: 340px;
+    }
+}
+
+
